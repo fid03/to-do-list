@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My To-do app</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="./to-dolist.css">
+
+</head>
+<body>
+  <img src="./img/preview.png" alt="image" id="image1">
+<div id="myDIV" class="header">
+  <h2>To Do List</h2>
+  <input type="text" id="myInput" placeholder="Add new task..">
+  <button onclick="newElement()" class="addBtn"><i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i></button>
+</div>
+<button class="sortBtn"  onclick="sortList()"><i class="fa fa-sort fa-2x" aria-hidden="true"></i></button>
+<ul id="myUL">
+  <li class="checked">Pay bills</li>
+  <li>Buy eggs</li>
+  <li>Read a book</li>
+  <li>Organize office</li>
+</ul>
+<img src="./img/work-from-home-3971986-3287021.webp" alt="image" id="image2">
+<script src="https://kit.fontawesome.com/bd790ecbf0.js" crossorigin="anonymous"></script>
+<script src="./to-dolist.js"></script>
+</body>
+</html>

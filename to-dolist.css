@@ -8,7 +8,7 @@ body {
   padding: 0;
 }
 
-/* Include the padding and border in an element's total width and height */
+
 * {
   box-sizing: border-box;
 }
@@ -20,9 +20,10 @@ body {
 }
 
 #image2{
+    position:absolute;
     width: 400px;
-    margin-left:70%;
-    margin-top: -200px;
+    left:970px;
+    top:200px;
 }
 
 h2{
@@ -34,25 +35,22 @@ h2{
     top: 20px;
 }
 
-
-/* Remove margins and padding from the list */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* Style the list items */
+
 ul li {
   position:relative ;
   width:350px;
   margin-left:37%;
-  margin-top: -100px;
+  margin-bottom:5px;
   list-style: none;
   font-family: 'Prompt', sans-serif;
   height: 45px;
   line-height: 45px;
-  /* margin-bottom: 8px; */
-  /* background: transparent; */
+  
   
   border-left: 1px solid rgba(116, 98, 98, 0.2);
   border-bottom: 1px solid  rgba(116, 98, 98, 0.2);
@@ -63,29 +61,26 @@ ul li {
 }
 
 ul{
-    margin-top: -190px;
+    margin-top:-580px;
 }
 
-/* Set all odd list items to a different color (zebra-stripes) */
-/* ul li:nth-child(odd) {
-  background: #f9f9f9;
-} */
 
-/* Darker background-color on hover */
+
 ul li:hover {
   background: #ddd;
 }
 
-/* When clicked on, add a background color and strike out text */
 ul li.checked {
   background: rgb(97, 92, 92);
   color: #fff;
   text-decoration: line-through;
+  
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-
-
-/* Style the close button */
 .close {
   position: absolute;
   left: 360px;
@@ -113,10 +108,8 @@ ul li.checked {
 }
 
 
- 
-/* Style the header */
 .header {
-  background: rgba(255, 255, 255, 0.19);
+background: rgba(255, 255, 255, 0.19);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(4.9px);
@@ -128,14 +121,14 @@ width:500px;
  margin-bottom: 100px;
 }
 
-/* Clear floats after the header */
+
 .header:after {
   content: "";
-  display: table;
-  clear: both;
+  display:table;
+  clear:both;
 }
 
-/* Style the input */
+
 input {
   width: 350px;
     padding:15px;
@@ -164,7 +157,7 @@ input:hover{
 
 
 
-/* Style the "Add" button */
+
 .addBtn {
    border: none;
     background-color: transparent;
